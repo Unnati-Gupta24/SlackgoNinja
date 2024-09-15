@@ -7,8 +7,8 @@ import (
 )
 
 func main(){
-	os.Setenv("SLACK_BOT_TOKEN","xapp-1-A07MECABRB7-7733943621348-4e50e9de5dcf33c897b8975b4e56548a79307da0e70189541847719b1ca29da7")
-	os.Setenv("CHANNEL_ID","D07MKPE4PCL")
+	os.Setenv("SLACK_BOT_TOKEN","xapp-1-A07MECABRB7-77339-5b4e56548a79307da0e70189541847719b1ca29da7")
+	os.Setenv("CHANNEL_ID","D07MKPECL")
 	api := slack.New(os.Getenv("SLACK_BOT_TOKEN"))
 	channelArr := []string{os.Getenv("CHANNEL_ID")}
 	fileArr := []string{"linkedin.txt"}
