@@ -13,6 +13,10 @@ func main(){
 	channelArr := []string{os.Getenv("CHANNEL_ID")}
 	fileArr := []string{"linkedin.txt"}
 
+        if slackToken == "" || channelID == "" {
+	      log.Fatal("SLACK_BOT_TOKEN and CHANNEL_ID must be set")
+	}
+
 	for i := 0; i<len(fileArr); i++{
 		params := slack.FileUploadParameters{
 			Channels: channelArr,
